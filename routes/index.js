@@ -11,9 +11,6 @@ const Excel = require('exceljs');
 
 
 
-
-
-
 // creating middle ware functions here 
 function IsLoggedIn (req, res, next){
   if (req.isAuthenticated()) {
@@ -168,7 +165,7 @@ router.get('/exportdata', async function (req, res) {
     const tasks = await taskModel.find().populate('userid');
     const users = await userModel.find({isAdmin:'false'});
 
-    // Create a new Excel workbook
+    // Creating a new Excel workbook
     const workbook = new Excel.Workbook();
     const taskWorksheet = workbook.addWorksheet('Tasks');
     const userWorksheet = workbook.addWorksheet('Users');

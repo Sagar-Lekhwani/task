@@ -1,7 +1,10 @@
 const mongoose = require("mongoose");
 const plm = require("passport-local-mongoose");
 
+// my mongodb 
 // mongoose.connect("mongodb://127.0.0.1:27017/hacker");
+
+//mongo atlas online url
 mongoose.connect("mongodb+srv://sgrlekhwani:0dDFcZAP960BJTM7@cluster01.pk7yyl3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster01")
 
 
