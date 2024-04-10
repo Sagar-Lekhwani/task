@@ -1,6 +1,9 @@
 Here's a basic outline for your README file with step-by-step instructions for running the project:
 
 ---
+Admin Login Details are :
+name : Admin
+password : Admin
 
 # Project Name
 
