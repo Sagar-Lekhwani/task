@@ -34,7 +34,7 @@ Brief description of the project.
 
 ## Demo
 
-working vedio of project - https://screenrec.com/share/FAwIY7Lef0
+ vedio working of project - https://screenrec.com/share/FAwIY7Lef0
 
 ## License
 
