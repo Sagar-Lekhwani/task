@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMaster</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <div id="main">
+    <% if (successMessage.length> 0) { %>
+      <div class="alert alert-success">
+        <%= successMessage %>
+        <div class="bar"></div>
+      </div>
+      <% } %>
+      <% if (errorMessage.length> 0) { %>
+        <div class="alert alert-error">
+          <%= errorMessage %>
+          <div class="bar"></div>
+        </div>
+        <% } %>
+        <div id="header">
+          <h1>Task Master</h1>
+        </div>
+        <div id="center">
+          <div id="head">
+            <a href="/" class="back">Back</a>
+            Admin Panel
+          </div>
+          <h1>Add user Here</h1>
+          <div id="Addtable">
+            <form action="/adduser" method="post">
+              <div class="entries">
+                Name : <input type="text" name="name" placeholder="enter User name">
+              </div>
+              <div class="entries">
+                Email : <input type="text" name="email" placeholder="enter User Email">
+              </div>
+              <div class="entries">
+                Number : <input type="number" name="number" placeholder="enter User number">
+              </div>
+              <input type="submit" value="Add User">
+            </form>
+          </div>
+        </div>
+  </div>
+  <script>
+    // Get the flash message element
+    const flashMessage = document.querySelector('.alert');
+
+    // Function to hide the flash message after 10 seconds
+    setTimeout(() => {
+      flashMessage.classList.add('hidden');
+    }, 10000); // 10 seconds in milliseconds
+
+  </script>
+</body>
+
+</html>

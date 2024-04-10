@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <div id="main">
+      <% if (successMessage.length> 0) { %>
+        <div class="alert alert-success">
+          <%= successMessage %>
+          <div class="bar"></div>
+        </div>
+        <% } %>
+      <% if (errorMessage.length> 0) { %>
+        <div class="alert alert-success">
+          <%= errorMessage %>
+          <div class="bar"></div>
+        </div>
+        <% } %>
+        <div id="header">
+          <h1>Task Master</h1>
+        </div>
+        <div id="center">
+          <div id="head">
+            <a href="/" class="back">Back</a>
+            Admin Panel
+          </div>
+          <h1>Add Tasks Here</h1>
+          <div id="Addtable">
+            <form action="/addtask" method="post">
+              <div class="entries">
+               Task Name : <input type="text" name="name" placeholder="enter User name">
+              </div>
+              <div class="entries">
+                Select User : <select name="user" style="width: 30%; height: 30px; text-align: center;">
+                  <option>Select User</option>
+                  <%users.forEach(function (user) { %>
+                  <option value="<%= user._id%>"><%= user.name %></option>
+                  <% })%>
+                </select>
+                
+              </div>
+              <div class="entries">
+                Task Type  :<select name="type" style="width: 30%; height: 30px; text-align: center;">
+                  <option>Select</option>
+                  <option value="Pending">Pending</option> 
+                  <option value="Done">Done</option> 
+              </div>
+              <input type="submit" style="margin-left: 50px;" value="Add Task">
+            </form>
+          </div>
+        </div>
+      </div>
+      <script>
+        // Get the flash message element
+        const flashMessage = document.querySelector('.alert');
+    
+        // Function to hide the flash message after 10 seconds
+        setTimeout(() => {
+          flashMessage.classList.add('hidden');
+        }, 10000); // 10 seconds in milliseconds
+    
+      </script>
+</body>
+</html>

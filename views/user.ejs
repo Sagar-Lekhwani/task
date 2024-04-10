@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+          <h1>Task Master</h1>
+        </div>
+        <div id="center">
+          <div id="head">
+            <a href="/" class="back">Back</a>
+            Admin Panel
+          </div>
+          <div id="table">
+            <h1>User Table Data</h1>
+            <div class="col">
+              <h3>Name</h3>
+              <h3>Email</h3>
+              <h3>Number</h3>
+              <h3>Task Allotted</h3>
+              <h3>View User</h3>
+            </div>
+            <%users.forEach(function (user) { %>
+             <div class="rows">
+              <h3><%= user.name %></h3>
+              <h3><%= user.email %></h3>
+              <h3><%= user.number %></h3>
+              <h3><%= user.tasks.length %></h3>
+              <h3><a href="/viewuser/<%= user._id %>" style="text-decoration: none; color: black;">View</a></h3>
+              
+             </div>
+             <% })%>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

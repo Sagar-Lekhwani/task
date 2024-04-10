@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TaskMaster</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div id="main">
+      <% if (successMessage.length> 0) { %>
+        <div class="alert alert-success">
+          <%= successMessage %>
+          <div class="bar"></div>
+        </div>
+        <% } %>
+      <div id="logout">
+        <a href="/logout">Logout</a>
+      </div>
+      <div id="header">
+        <h1>Task Master</h1>
+      </div>
+      <div id="center">
+        <div id="head">
+          Admin Panel
+        </div>
+        <div id="middle">
+          <div class="cards">
+            <h1>User</h1>
+            <a href="/adduser">Add User</a>
+            <a href="/user">View All</a>
+          </div>
+          <div class="cards">
+            <h1>Task</h1>
+            <a href="/addtask">Add Task</a>
+            <a href="/alltasks">View All</a>
+          </div>
+          <div class="cards">
+            <a href="/export">Export Data</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Get the flash message element
+      const flashMessage = document.querySelector('.alert');
+  
+      // Function to hide the flash message after 10 seconds
+      setTimeout(() => {
+        flashMessage.classList.add('hidden');
+      }, 10000); // 10 seconds in milliseconds
+  
+    </script>
+  </body>
+</html>

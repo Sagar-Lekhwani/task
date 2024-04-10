@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+          <h1>Task Master</h1>
+        </div>
+        <div id="center">
+          <div id="head">
+            <a href="/" class="back">Back</a>
+            Admin Panel
+          </div>
+          <div id="table">
+            <h1>Task Table Data</h1>
+            <div class="col2">
+              <h3>Task Id</h3>
+              <h3>Task Name</h3>
+              <h3>Alloted To</h3>
+              <h3>Task Status</h3>
+            </div>
+            <% alltasks.reverse().forEach(function (task) { %> 
+             <div class="rows2">
+              <h3><%= task._id %></h3>
+              <h3><%= task.name %></h3>
+              <h3><%= task.userid.name %></h3>
+              <h3><%= task.status %></h3>
+            </div>
+            <% }) %>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

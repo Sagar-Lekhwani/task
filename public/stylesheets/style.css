@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html , body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(227, 232, 239);
+  color: rgb(18, 31, 55);
+}
+
+#main {
+  width: 100vw;
+}
+
+#header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#center {
+  position: relative;
+  width: 100%;
+  padding-top: 20px;
+}
+
+#head {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-size: 4vw;
+}
+
+#middle {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#middle .cards {
+  width: 20%;
+  height: 75%;
+  background-color: rgba(236, 239, 244, 0.845);
+  border-radius: 15px;
+  color: rgb(18, 31, 55);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+
+}
+
+#middle .cards h1 {
+  font-size: 2.2vw;
+}
+
+#middle .cards a {
+  text-decoration: none;
+  font-size: 2vw;
+  border-radius: 15px;
+  padding: 5px;
+  color: rgb(18, 31, 55);
+}
+
+#login {
+  width: 100%;
+  height: 60vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#login form {
+  width: 20%;
+  height: 70%;
+  background-color: white;
+  color: rgb(18, 31, 55);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 20px;
+}
+
+#login #p {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#login form .entries {
+  margin-top: 10px;
+  font-size: 1.2vw;
+}
+
+#login form .entries input {
+ height: 25px;
+
+}
+
+#login input[type='submit'] {
+  width: 50%;
+  height: 28px;
+  background-color: rgb(18, 31, 55);
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+#table {
+  width: 100%;
+}
+
+#table #info {
+  margin-top: 10px;
+  width: 80%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#table .col {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(18, 31, 55);
+  color: white;
+  display: flex;
+}
+
+#table .col2 {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  background-color: rgb(18, 31, 55);
+  color: white;
+}
+
+#table .col3 {
+  margin-top: 20px;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  background-color: rgb(18, 31, 55);
+  color: white;
+}
+
+#table .col h3 {
+  width: 20%;
+  height: 100%;
+  border-right: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+}
+
+#table .col2 h3 {
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+}
+
+#table .col3 h3 {
+  width: 33%;
+  height: 100%;
+  border-right: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+}
+
+#table .rows {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  color: black;
+  background-color: whitesmoke;
+}
+
+#table .rows2 {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  color: black;
+  background-color: whitesmoke;
+}
+
+#table .rows3 {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  color: black;
+  background-color: whitesmoke;
+}
+
+#table .rows h3 {
+  width: 20%;
+  border-right: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#table .rows2 h3 {
+  width: 25%;
+  border-right: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#table .rows3 h3 {
+  width: 33%;
+  border-right: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Addtable {
+  width: 100%;
+  height: 60vh;
+  background-color: rgba(215, 219, 224, 0.776);
+  color: rgb(18, 31, 55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#Addtable form {
+  margin: 20px;
+  width: 50%;
+  height: 80%;
+  padding-left: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: white;
+  backdrop-filter: blur(10px);
+  color: rgb(18, 31, 55);
+}
+
+#Addtable form .entries {
+  font-size: 1.5vw;
+  width: 85%;
+  height: 50px;
+  padding-left: 20px;
+}
+
+#Addtable form .entries input {
+  width: 80%;
+  height: 60%;
+}
+
+#Addtable form input[type=submit] {
+  width: 150px;
+  height: 50px;
+  margin: 0 auto;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(18, 31, 55);
+}
+
+.alert {
+  position: absolute;
+  border-radius: 20px;
+  top: 100px;
+  right: 20%;
+  width: 20%;
+  height: 70px;
+  background-color: rgb(95, 228, 95);
+  transform: translate(50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.alert-error{
+  position: absolute;
+  border-radius: 20px;
+  top: 100px;
+  right: 20%;
+  width: 20%;
+  height: 70px;
+  background-color: rgb(242, 73, 16);
+  transform: translate(50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(11, 11, 11);
+  font-size: 1.5vw;
+}
+.alert .bar {
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.436);
+  left: 0;
+  animation: increaseBar 10s linear; /* 10 seconds animation */
+
+  
+}
+.alert.hidden {
+  display: none;
+}
+
+.back {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  position: absolute;
+  top: 10%;
+  left: 20px;
+  font-size: 2vw;
+}
+
+
+#he{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 20px;
+}
+
+#he a{
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(18, 31, 55);
+  font-size: 1.5vw;
+  text-decoration: none;
+}
+
+
+#logout {
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+  right: 50px;
+  width: 100px;
+  height: 50px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(18, 31, 55);
+}
+
+#logout a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+@keyframes increaseBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
